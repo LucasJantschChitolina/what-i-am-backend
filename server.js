@@ -1,10 +1,12 @@
 import express from "express";
 import { getDatabase } from './index.js'
 import cors from 'cors';
+import dotenv from 'dotenv'
 
 const port = 8000;
 const app = express();
 
+dotenv.config()
 app.use(cors())
 
 app.get("/posts", async (req, res) => {
