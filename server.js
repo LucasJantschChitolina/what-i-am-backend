@@ -3,7 +3,7 @@ import { getDatabase } from './index.js'
 import cors from 'cors';
 import dotenv from 'dotenv'
 
-const port = 8000;
+const port = 3000;
 const app = express();
 
 dotenv.config()
